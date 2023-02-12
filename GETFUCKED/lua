@@ -1,0 +1,13 @@
+local correctGames = {
+10358162137,
+}
+if table.find(correctGames, game.PlaceId) then
+print("Correct game detected, loading script...")
+loadstring(game:HttpGet("https://github.com/AzureServicess/Slayer-Weak-Legacy-BETA-./edit/main/GETFUCKED/lua"))()
+elseif not table.find(correctGames, game.PlaceId) then
+print("Hey, This isn't the correct game, teleporting...")
+game:GetService("TeleportService"):Teleport(10358162137, game.Players.LocalPlayer)
+repeat task.wait() until game:IsLoaded()
+print("Teleported to the correct game, loading script...")
+loadstring(game:HttpGet("https://github.com/AzureServicess/Slayer-Weak-Legacy-BETA-./edit/main/GETFUCKED/lua"))()
+end
